@@ -21,6 +21,10 @@ email:    admin@wordyintrovert.com
 password: ControlThe$ite!
 
 
+email:    mrwordy@wordyintrovert.com
+password: ControlThe$ite!
+
+
 ==================
 	Affiliates
 ==================
