@@ -21,4 +21,12 @@ get_header(); ?>
     </div>
 
 <?php
+    while (have_posts()) {
+        the_post();
+        echo '<h2>'.the_title().'</h2>';
+        the_content();
+    }
+?>
+
+<?php
 get_footer();
