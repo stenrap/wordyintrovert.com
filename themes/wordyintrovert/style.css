@@ -722,7 +722,7 @@ nav a {
 }
 
 #post-list {
-    margin: 30px;
+    margin: 30px 30px 30px 100px;
 }
 
 #post-snippet {
@@ -742,7 +742,7 @@ img.wp-post-image, .video-thumbnail {
     width: 270px;
 }
 
-.post-metadata{
+.post-metadata {
     display: inline-block;
     margin-left: 30px;
 }
@@ -778,12 +778,23 @@ img.wp-post-image, .video-thumbnail {
     font-size: 2.625em;
 }
 
-.post-title a {
+.post-title a, .post-stats a {
     color: #000;
 }
 
-.post-title a:hover {
-    color: #777;
+.post-title a:hover, .post-stats a:hover {
+    color: #999;
+}
+
+.post-stats {
+    font-size: 1.2em;
+    padding-top: 12px;
+}
+
+.post-teaser {
+    font-size: 1.625em;
+    margin-top: 20px;
+    margin-left: 300px; /* width of thumbnail (270) + 30 */
 }
 
 /*---------- min-width 768 px ----------*/

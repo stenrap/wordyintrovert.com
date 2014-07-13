@@ -44,6 +44,26 @@ get_header(); ?>
         $post_date    = get_the_date('j');
         $post_year    = get_the_date('Y');
         $post_title   = get_the_title();
+        $post_author  = get_the_author();
+        $num_comments = get_comments_number() == 1 ? get_comments_number() . " Comment" : get_comments_number() . " Comments";
+        $comments_url = get_comments_link();
+
+        $post_tags    = get_the_tags();
+        $tag_names    = "";
+
+        foreach ($post_tags as $tag) {
+            $tag_id   = $tag->term_id;
+            $tag_link = get_tag_link($tag_id);
+            if (strlen($tag_names) > 0) {
+                $tag_names .= ", ";
+            }
+            $tag_names .= '<a href="'.$tag_link.'">'.$tag->name.'</a>';
+        }
+
+        if (strlen($tag_names) > 0) {
+            $tag_names = '<i class="icon-hashtag"></i> ' . $tag_names;
+        }
+
         $post_content = get_the_content();
 
 echo <<<POST
@@ -64,7 +84,15 @@ echo <<<POST
                         <div class="post-title">
                             <a href="$post_permalink">$post_title</a>
                         </div>
+                        <div class="post-stats">
+                            <i class="icon-user"></i> $post_author &nbsp;&nbsp;&nbsp;
+                            <i class="icon-discussion"></i> <a href="$comments_url">$num_comments</a> &nbsp;&nbsp;&nbsp;
+                            $tag_names
+                        </div>
                     </div>
+                </div>
+                <div class="post-teaser">
+                    $post_content
                 </div>
             </div>
 POST;

@@ -17,6 +17,7 @@
     <title><?php wp_title( '|', true, 'right' ); ?></title>
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/iconset.css" type="text/css" />
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
