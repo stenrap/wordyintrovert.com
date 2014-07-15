@@ -103,7 +103,9 @@ POST;
 
         </div> <!-- #post-list -->
         <div id="post-sidebar">
+            <div id="blog-design-ad">
 
+            </div>
         </div>
     </div> <!-- #post-content -->
 
