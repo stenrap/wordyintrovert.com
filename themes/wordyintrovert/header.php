@@ -14,7 +14,7 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
-    <title><?php wp_title( '|', true, 'right' ); ?></title>
+    <title><?php if (is_home() || is_front_page()) echo get_bloginfo('name'); else wp_title( '|', true, 'right' ); ?></title>
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/iconset.css" type="text/css" />

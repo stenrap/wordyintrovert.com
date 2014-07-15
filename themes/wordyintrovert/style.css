@@ -457,7 +457,7 @@ th {
 
 
 /*------------------------------------------------------------------------------
-	2.0 - Structure
+    2.0 - Structure
 ------------------------------------------------------------------------------*/
 
 /* Set the font-size to 62.5% so that rem sizes will be multiples of 10 (e.g. 1.6 rem = 16px) */
@@ -494,9 +494,9 @@ a {
 }
 
 
-    /*------------------------------------------------------------------------------
-      3.0 - Header
-    ------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------
+    3.0 - Header
+------------------------------------------------------------------------------*/
 
 #logo {
 	/*background: #ccc;*/
@@ -708,21 +708,19 @@ nav a {
 	4.0 - Content
 ------------------------------------------------------------------------------*/
 
-#content {
-	width: 100%;
-}
-
 #intro-strip {
 	display: none;
 }
 
 #post-content {
     /*background: #aa0000;*/
-    width: 100%;
+    /*width: 100%;*/
+    margin: auto;
+    width: 85.714285714286%;
 }
 
 #post-list {
-    margin: 30px 30px 30px 100px;
+    margin: 30px 0;
 }
 
 #post-snippet {
@@ -730,26 +728,30 @@ nav a {
 }
 
 img.wp-post-image, .video-thumbnail {
-    display: block;
+    /*display: block;*/
     height: 212px;
+    /*margin: auto;*/
     width: 270px;
 }
 
 .post-thumbnail {
-    display: inline-block;
-    float: left;
+    /*display: inline-block;*/
+    /*float: left;*/
     height: 212px;
+    margin: auto;
     width: 270px;
 }
 
 .post-metadata {
-    display: inline-block;
-    margin-left: 30px;
+    /*display: inline-block;*/
+    /*margin-left: 30px;*/
+    margin-top: 10px;
 }
 
 .post-date-box {
-    display: inline-block;
+    /*display: inline-block;*/
     float: left;
+    margin-right: 10px;
 }
 
 .post-date-box-top {
@@ -770,8 +772,8 @@ img.wp-post-image, .video-thumbnail {
 }
 
 .post-info {
-    float: right;
-    margin-left: 25px;
+    /*float: right;*/
+    /*padding-left: 25px;*/
 }
 
 .post-title {
@@ -793,8 +795,9 @@ img.wp-post-image, .video-thumbnail {
 
 .post-teaser {
     font-size: 1.625em;
+    line-height: 1.375em;
     margin-top: 20px;
-    margin-left: 300px; /* width of thumbnail (270) + 30 */
+    /*margin-left: 300px; *//* width of thumbnail (270) + 30 */
 }
 
 /*---------- min-width 768 px ----------*/
@@ -846,6 +849,43 @@ img.wp-post-image, .video-thumbnail {
 		margin: 0 0 0 25px;
 		width: 256px;
 	}
+
+    img.wp-post-image, .video-thumbnail {
+        display: block;
+        height: 212px;
+        margin: auto;
+        width: 270px;
+    }
+
+    .post-thumbnail {
+        display: inline-block;
+        float: left;
+        height: 212px;
+        margin: auto;
+        width: 270px;
+    }
+
+    .post-metadata {
+        display: inline-block;
+        margin-left: 30px;
+        margin-top: 0;
+    }
+
+    .post-date-box {
+        display: inline-block;
+        float: left;
+    }
+
+    .post-info {
+        float: right;
+    }
+
+    .post-teaser {
+        font-size: 1.625em;
+        margin-top: 20px;
+        margin-left: 300px; /* width of thumbnail (270) + 30 */
+        width: 50%;
+    }
 
 }
 

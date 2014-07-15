@@ -9,7 +9,7 @@
  * @since Twenty Fourteen 1.0
  */
 ?>
-    </div>
+    </div> <!-- #content -->
     <?php wp_footer(); ?>
 </body>
 </html>
