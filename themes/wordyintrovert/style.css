@@ -716,7 +716,8 @@ nav a {
     /*background: #aa0000;*/
     /*width: 100%;*/
     margin: auto;
-    width: 1200px;
+    /*width: 1200px;*/
+    width: 85.714285714286%;
 }
 
 #post-list {
@@ -898,12 +899,21 @@ img.wp-post-image, .video-thumbnail {
         float: right;
         margin-top: 30px;
         vertical-align: top;
-        width: 270px;
+        width: 600px;
     }
 
     #blog-design-ad {
         border: 1px solid black;
+        float: left;
         height: 210px;
+        width: 270px;
+    }
+
+    #blog-donate-ad {
+        border: 1px solid black;
+        display: inline-block;
+        height: 210px;
+        width: 270px;
     }
 
 }

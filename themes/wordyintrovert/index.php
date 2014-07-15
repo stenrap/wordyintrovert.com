@@ -106,6 +106,9 @@ POST;
             <div id="blog-design-ad">
 
             </div>
+            <div id="blog-donate-ad">
+
+            </div>
         </div>
     </div> <!-- #post-content -->
 
