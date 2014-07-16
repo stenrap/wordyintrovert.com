@@ -64,7 +64,7 @@ get_header(); ?>
             $tag_names = '<i class="icon-hashtag"></i> ' . $tag_names;
         }
 
-        $post_content = get_the_content();
+        $post_content = get_the_excerpt()." [...]";
 
 echo <<<POST
             <div class="post-snippet">
