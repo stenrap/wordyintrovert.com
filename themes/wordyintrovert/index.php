@@ -64,7 +64,7 @@ get_header(); ?>
             $tag_names = '<i class="icon-hashtag"></i> ' . $tag_names;
         }
 
-        $post_content = get_the_excerpt().' ...<span class="post-read-more"><a href="'.get_permalink().'">Read more &nbsp;<i class="icon-arrow_big_right"></i></a></span>';
+        $post_content = get_the_excerpt().' ...<span class="post-read-more"><a href="'.get_permalink().'">Continue reading &nbsp;<i class="icon-arrow_big_right"></i></a></span>';
 
 echo <<<POST
             <div class="post-snippet">
