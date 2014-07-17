@@ -818,6 +818,28 @@ img.wp-post-image, .video-thumbnail {
     color: #009bff;
 }
 
+#post-sidebar {
+    display: inline-block;
+    float: right;
+    margin: 30px auto 0 auto;
+    vertical-align: top;
+    width: 300px;
+}
+
+#blog-design-ad {
+    border: 1px solid black;
+    float: left;
+    height: 210px;
+    width: 300px;
+}
+
+#blog-donate-ad {
+    border: 1px solid black;
+    display: inline-block;
+    height: 210px;
+    width: 300px;
+}
+
 
 /*---------- min-width 480 px ----------*/
 
