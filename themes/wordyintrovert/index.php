@@ -103,6 +103,29 @@ POST;
 
         </div> <!-- #post-list -->
         <div id="post-sidebar">
+
+            <!--
+
+                Ideas for Sidebar Content:
+
+                    - A third-party advertisement (e.g. Google AdSense)
+
+                    - Your own advertisement (i.e. something that leads to your resources page)
+
+                  * - Recommended products (i.e. affiliate links, right off the bat) using beautiful graphics that don't looks like ads!
+
+                    - A donation appeal
+
+                    - Social media links
+
+                    - An email subscription form
+
+                    - Recent posts
+
+                    - Search form
+
+            -->
+
             <div id="blog-design-ad">
 
             </div>
