@@ -106,23 +106,38 @@ POST;
 
             <!--
 
+                WYLO - In order to accomodate ads that are 300px wide:
+
+                    1. Change your design so the thumbnail is always on top (and decrease the height of the thumbnail).
+
+                    2. Start showing ads at 768px:
+
+                             430    300
+                          13     12     13
+
+
+                What are the purposes of the sidebar?
+
+                    1. To attract and retain readers (e.g. social media links and email subscription)
+
+                    2. To generate revenue (affiliate links, donations, ads)
+
+
                 Ideas for Sidebar Content:
 
-                    - A third-party advertisement (e.g. Google AdSense)
+                    1 - "Powered By" (affiliate links) using beautiful graphics that don't looks like ads!
 
-                    - Your own advertisement (i.e. something that leads to your resources page)
+                    2 - A donation appeal (recurring donations see no ads?)
 
-                  * - Recommended products (i.e. affiliate links, right off the bat) using beautiful graphics that don't looks like ads!
+                    3 - Third-party advertisements (e.g. Google AdSense)
 
-                    - A donation appeal
+                    4 - Social media links
 
-                    - Social media links
+                    5 - Email subscription form (subscribe to be notified of posts)
 
-                    - An email subscription form
+                    6 - Recent posts
 
-                    - Recent posts
-
-                    - Search form
+                    7 - Search form
 
             -->
 

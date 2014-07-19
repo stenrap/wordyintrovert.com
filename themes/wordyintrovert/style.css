@@ -38,7 +38,7 @@ Table of Contents
  */
 
 html {
-  font-family: sans-serif; /* 1 */
+  font-family: "Helvetica Neue", Helvetica, sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -962,7 +962,7 @@ img.wp-post-image, .video-thumbnail {
     .post-teaser {
         display: inline-block;
         font-size: 1.625em;
-        margin-top: 16px;
+        margin-top: 15px;
         margin-left: 15px;
         width: 425px;
     }
@@ -970,7 +970,7 @@ img.wp-post-image, .video-thumbnail {
     .post-read-more {
         display: block;
         float: right;
-        margin-top: 20px;
+        margin-top: 25px;
     }
 
     .post-read-more a {
@@ -1008,7 +1008,8 @@ img.wp-post-image, .video-thumbnail {
 @media screen and (min-width: 992px) {
 
     #post-content {
-        width: 942px;
+        margin-left: 15px;
+        /*width: 942px;*/
     }
 
     .post-teaser {
@@ -1016,11 +1017,11 @@ img.wp-post-image, .video-thumbnail {
         /*font-size: 1.625em;*/
         /*margin-top: 16px;*/
         /*margin-left: 15px;*/
-        width: 650px;
+        /*width: 650px;*/
     }
 
     .post-read-more {
-        margin-top: 30px;
+        /*margin-top: 30px;*/
     }
 
 }

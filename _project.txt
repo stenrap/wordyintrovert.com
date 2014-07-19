@@ -25,6 +25,10 @@ email:    mrwordy@wordyintrovert.com
 password: ControlThe$ite!
 
 
+email:    payments@wordyintrovert.com
+password: makeCa$h!
+
+
 ==================
 	Affiliates
 ==================
@@ -33,10 +37,6 @@ password: ControlThe$ite!
 	  to "Activate Affiliate Account" at the bottom. (There was also a button to "Activate StoreFront" if you
 	  ever want to sell anything...)
 	
-	- Bluehost
-	
-	- 
-
 
 ============
 	TODO
