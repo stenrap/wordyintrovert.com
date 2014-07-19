@@ -61,7 +61,7 @@ get_header(); ?>
         }
 
         if (strlen($tag_names) > 0) {
-            $tag_names = '<i class="icon-hashtag"></i> ' . $tag_names;
+            $tag_names = '<span class="post-tags"><i class="icon-hashtag"></i> '.$tag_names.'</span>';
         }
 
         $post_content = get_the_excerpt().' ...<span class="post-read-more"><a href="'.get_permalink().'">Continue reading &nbsp;<i class="icon-arrow_big_right"></i></a></span>';
@@ -101,8 +101,7 @@ POST;
     }
 ?>
 
-        </div> <!-- #post-list -->
-        <div id="post-sidebar">
+        </div><div id="post-sidebar"> <!--  -->
 
             <!--
 

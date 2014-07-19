@@ -714,15 +714,12 @@ nav a {
 
 #post-content {
     /*background: #aa0000;*/
-    /*width: 100%;*/
     margin: auto;
-    /*width: 1200px;*/
-    /*width: 85.714285714286%;*/
     width: 300px;
 }
 
 #post-list {
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
 .post-snippet {
@@ -732,17 +729,17 @@ nav a {
 
 img.wp-post-image, .video-thumbnail {
     /*display: block;*/
-    height: 212px;
+    height: 185px;
     /*margin: auto;*/
-    width: 270px;
+    width: 300px;
 }
 
 .post-thumbnail {
     /*display: inline-block;*/
     /*float: left;*/
-    height: 212px;
+    height: 185px;
     margin: auto;
-    width: 270px;
+    width: 300px;
 }
 
 .post-metadata {
@@ -760,7 +757,7 @@ img.wp-post-image, .video-thumbnail {
 .post-date-box-top {
     background: #f6f6f6;
     border: 1px solid #ccc;
-    font-size: 1.625em;
+    font-size: 1.625rem;
     padding: 8px;
     text-align: center;
 }
@@ -769,7 +766,7 @@ img.wp-post-image, .video-thumbnail {
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     padding: 5px;
     text-align: center;
 }
@@ -780,7 +777,7 @@ img.wp-post-image, .video-thumbnail {
 }
 
 .post-title {
-    font-size: 2.625em;
+    font-size: 2.5rem;
 }
 
 .post-title a, .post-stats a {
@@ -793,20 +790,23 @@ img.wp-post-image, .video-thumbnail {
 
 .post-stats {
     font-size: 1.2em;
-    padding-top: 12px;
+    padding-top: 10px;
+}
+
+.post-tags {
+    display: none;
 }
 
 .post-teaser {
     font-size: 1.625em;
     line-height: 1.375em;
     margin-top: 16px;
-    /*margin-left: 300px; *//* width of thumbnail (270) + 30 */
 }
 
 .post-read-more {
     display: block;
     float: right;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .post-read-more a {
@@ -819,24 +819,24 @@ img.wp-post-image, .video-thumbnail {
 }
 
 #post-sidebar {
-    display: inline-block;
-    float: right;
+    /*display: inline-block;*/
+    /*float: right;*/
     margin: 30px auto 0 auto;
     vertical-align: top;
     width: 300px;
 }
 
 #blog-design-ad {
-    border: 1px solid black;
-    float: left;
-    height: 210px;
+    background: #990000;
+    /*float: left;*/
+    height: 250px;
     width: 300px;
 }
 
 #blog-donate-ad {
-    border: 1px solid black;
+    background: #ccc;
     display: inline-block;
-    height: 210px;
+    height: 250px;
     width: 300px;
 }
 
@@ -846,21 +846,20 @@ img.wp-post-image, .video-thumbnail {
 @media screen and (min-width: 480px) {
 
     #post-content {
-        width: 430px;
+        width: 420px;
     }
 
-    img.wp-post-image, .video-thumbnail {
-        height: 338px;
-        width: 430px;
+    .post-thumbnail, img.wp-post-image, .video-thumbnail {
+        height: 259px;
+        width: 420px;
     }
 
-    .post-thumbnail {
-        height: 338px;
-        width: 430px;
+    .post-tags {
+        display: inline;
     }
 
     .post-read-more {
-        margin-top: 25px;
+        /*margin-top: 25px;*/
     }
 
 }
@@ -874,13 +873,15 @@ img.wp-post-image, .video-thumbnail {
 		/*background: url(images/squares.png) repeat center top;*/
 		background: url(images/tiles.png) repeat center top;
 		display: block;
-		height: 364px;
+		height: 296px;
 	}
 
 	#intro {
 		/*background: #990000;*/
 		margin: 0 auto;
-		padding-top: 54px;
+		padding-left: 25px;
+		padding-top: 20px;
+		/*padding-top: 54px;*/
 		width: 728px;
 	}
 
@@ -917,100 +918,105 @@ img.wp-post-image, .video-thumbnail {
 	}
 
     #post-content {
-        width: 718px;
+        width: 736px;
     }
 
     #post-list {
         display: inline-block;
+        margin-right: 16px;
+        width: 420px;
     }
 
     .post-snippet {
         /*height: 212px;*/
-        margin-bottom: 75px;
+        /*margin-bottom: 75px;*/
     }
 
     .post-thumbnail {
-        display: inline-block;
-        float: left;
-        height: 212px;
-        margin: auto;
-        width: 270px;
+        /*display: inline-block;*/
+        /*float: left;*/
+        /*height: 212px;*/
+        /*margin: auto;*/
+        /*width: 270px;*/
     }
 
     img.wp-post-image, .video-thumbnail {
-        display: block;
-        height: 212px;
-        margin: auto;
-        width: 270px;
+        /*display: block;*/
+        /*height: 212px;*/
+        /*margin: auto;*/
+        /*width: 270px;*/
     }
 
     .post-metadata {
-        display: inline-block;
-        margin-left: 15px;
-        margin-top: 0;
+        /*display: inline-block;*/
+        /*margin-left: 15px;*/
+        /*margin-top: 0;*/
     }
 
     .post-date-box {
-        display: inline-block;
-        float: left;
+        /*display: inline-block;*/
+        /*float: left;*/
     }
 
     .post-info {
-        float: right;
+        /*float: right;*/
     }
 
     .post-teaser {
-        display: inline-block;
+        /*display: inline-block;*/
         font-size: 1.625em;
-        margin-top: 15px;
-        margin-left: 15px;
-        width: 425px;
+        /*margin-top: 15px;*/
+        /*margin-left: 15px;*/
+        /*width: 425px;*/
     }
 
     .post-read-more {
-        display: block;
-        float: right;
-        margin-top: 25px;
+        /*display: block;*/
+        /*float: right;*/
     }
 
     .post-read-more a {
-        color: #007ccc;
         padding: 0 10px;
     }
 
     #post-sidebar {
         display: inline-block;
-        float: right;
-        margin-top: 30px;
+        /*float: right;*/
+        margin-top: 20px;
         vertical-align: top;
-        width: 600px;
+        /*width: 600px;*/
     }
 
     #blog-design-ad {
-        border: 1px solid black;
         float: left;
-        height: 210px;
-        width: 270px;
     }
 
     #blog-donate-ad {
-        border: 1px solid black;
         display: inline-block;
-        height: 210px;
-        width: 270px;
+        margin-top: 16px;
     }
 
 }
 
 
-/*---------- min-width 992 px ----------*/
+/*---------- min-width 980 px ----------*/
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 980px) {
 
     #post-content {
-        margin-left: 15px;
-        /*width: 942px;*/
+        width: 940px;
     }
+
+    #post-list {
+        margin-right: 20px;
+        width: 620px;
+    }
+
+    .post-thumbnail, img.wp-post-image, .video-thumbnail {
+        height: 382px;
+        width: 620px;
+    }
+
 
     .post-teaser {
         /*display: inline-block;*/
