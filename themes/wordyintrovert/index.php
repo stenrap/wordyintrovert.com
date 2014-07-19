@@ -101,19 +101,9 @@ POST;
     }
 ?>
 
-        </div><div id="post-sidebar"> <!--  -->
+        </div><div id="post-sidebar"> <!-- Make sure there's no space between #post-list and #post-sidebar -->
 
             <!--
-
-                WYLO - In order to accomodate ads that are 300px wide:
-
-                    1. Change your design so the thumbnail is always on top (and decrease the height of the thumbnail).
-
-                    2. Start showing ads at 768px:
-
-                             430    300
-                          13     12     13
-
 
                 What are the purposes of the sidebar?
 
@@ -138,17 +128,36 @@ POST;
 
                     7 - Search form
 
+                Colors for sidebar elements (related to your link color of 007CCC):
+
+                    0D527F
+
+                    D41615
+
+
+
+
+
             -->
 
-            <div id="blog-design-ad">
-
+            <div id="bluehost-affiliate">
+                    <a href="http://www.bluehost.com/track/wordyintrovert/home-sidebar" target="_blank">
+                        <span id="host-on">I proudly host this blog on:</span>
+                        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/bluehost.png" />
+                        <span id="bluehost-price">Professional web hosting for a mere $3.95/month</span>
+                    </a>
             </div>
-            <div id="blog-donate-ad">
-
+<!--            <div id="blog-donate-ad">-->
+            <div id="amazon-macbook-affiliate">
+                <a href="http://www.amazon.com/s/?_encoding=UTF8&camp=1789&creative=390957&field-keywords=macbook%20pro&linkCode=ur2&rh=n%3A541966%2Ck%3Amacbook%20pro&tag=wordyintrover-20&url=search-alias%3Dcomputers&linkId=MGIUOPQV3X5ZKV5S" target="_blank">
+                    <span id="create-on">I blog with joy on a Mac:</span>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/macbook-pro@2x.jpg" />
+                </a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=wordyintrover-20&l=ur2&o=1" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
             </div>
         </div>
     </div> <!-- #post-content -->
 
 
 <?php
+
 get_footer();

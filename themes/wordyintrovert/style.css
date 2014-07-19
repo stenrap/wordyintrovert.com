@@ -641,7 +641,7 @@ nav a {
 	}
 
 	nav {
-		margin-right: 10%;
+		margin-right: 5%;
 	}
 
 	#menu-button {
@@ -819,25 +819,70 @@ img.wp-post-image, .video-thumbnail {
 }
 
 #post-sidebar {
-    /*display: inline-block;*/
-    /*float: right;*/
     margin: 30px auto 0 auto;
     vertical-align: top;
     width: 300px;
 }
 
-#blog-design-ad {
-    background: #990000;
-    /*float: left;*/
+#bluehost-affiliate {
+    background: #3575d3;
     height: 250px;
+    text-align: center;
     width: 300px;
 }
 
-#blog-donate-ad {
+#bluehost-affiliate a {
+    color: #fff;
+    display: block;
+    height: 216px;
+    padding-top: 34px;
+    width: 300px;
+}
+
+#host-on, #bluehost-price {
+    display: block;
+    font-size: 2.0rem;
+    margin: 0 26px 34px 26px;
+}
+
+#bluehost-price {
+    margin-top: 34px;
+}
+
+#bluehost-affiliate img {
+    display: block;
+    margin: auto;
+    width: 228px;
+}
+
+#amazon-macbook-affiliate {
     background: #ccc;
     display: inline-block;
     height: 250px;
+    margin-top: 20px;
+    text-align: center;
     width: 300px;
+}
+
+#amazon-macbook-affiliate a {
+    color: #212121;
+    display: block;
+    height: 216px;
+    padding-top: 34px;
+    width: 300px;
+}
+
+#create-on {
+    display: block;
+    font-size: 2.0rem;
+    margin: 0 26px 26px 26px;
+}
+
+#amazon-macbook-affiliate img {
+    display: block;
+    height: 130px;
+    margin: auto;
+    width: 224px;
 }
 
 
@@ -987,11 +1032,11 @@ img.wp-post-image, .video-thumbnail {
         /*width: 600px;*/
     }
 
-    #blog-design-ad {
+    #bluehost-affiliate {
         float: left;
     }
 
-    #blog-donate-ad {
+    #amazon-macbook-affiliate {
         display: inline-block;
         margin-top: 16px;
     }
@@ -1030,14 +1075,29 @@ img.wp-post-image, .video-thumbnail {
         /*margin-top: 30px;*/
     }
 
+    #amazon-macbook-affiliate {
+        margin-top: 20px;
+    }
+
 }
 
 
-/*---------- min-width 1200 px ----------*/
+/*---------- min-width 1300 px ----------*/
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
 
-    /* WYLO: Move the post sidebar over and */
+    #post-content {
+        width: 1260px;
+    }
+
+    #post-sidebar {
+        width: 620px;
+    }
+
+    #amazon-macbook-affiliate {
+        margin-left: 20px;
+        margin-top: 0;
+    }
 
 }
 
