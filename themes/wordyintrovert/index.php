@@ -114,29 +114,19 @@ POST;
 
                 Ideas for Sidebar Content:
 
-                    1 - "Powered By" (affiliate links) using beautiful graphics that don't looks like ads!
+                    1 - Bluehost affiliate link
 
-                    2 - A donation appeal (recurring donations see no ads?)
+                    2 - MacBook affiliate link (Amazon)
 
-                    3 - Third-party advertisements (e.g. Google AdSense)
+                    3 - Email subscription form
 
                     4 - Social media links
 
-                    5 - Email subscription form (subscribe to be notified of posts)
+                    5 - Third-party advertisements (e.g. Google AdSense)
 
                     6 - Recent posts
 
                     7 - Search form
-
-                Colors for sidebar elements (related to your link color of 007CCC):
-
-                    0D527F
-
-                    D41615
-
-
-
-
 
             -->
 
@@ -147,12 +137,14 @@ POST;
                         <span id="bluehost-price">Professional web hosting for a mere $3.95/month</span>
                     </a>
             </div>
-<!--            <div id="blog-donate-ad">-->
             <div id="amazon-macbook-affiliate">
                 <a href="http://www.amazon.com/s/?_encoding=UTF8&camp=1789&creative=390957&field-keywords=macbook%20pro&linkCode=ur2&rh=n%3A541966%2Ck%3Amacbook%20pro&tag=wordyintrover-20&url=search-alias%3Dcomputers&linkId=MGIUOPQV3X5ZKV5S" target="_blank">
                     <span id="create-on">I blog with joy on a Mac:</span>
                     <img src="<?php bloginfo('stylesheet_directory'); ?>/images/macbook-pro@2x.jpg" />
                 </a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=wordyintrover-20&l=ur2&o=1" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+            </div>
+            <div id="subscribe">
+
             </div>
         </div>
     </div> <!-- #post-content -->

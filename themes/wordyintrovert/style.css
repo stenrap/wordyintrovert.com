@@ -883,6 +883,15 @@ img.wp-post-image, .video-thumbnail {
     width: 224px;
 }
 
+#subscribe {
+    border: 1px solid #d9d9d9;
+    display: inline-block;
+    height: 248px;
+    margin-top: 20px;
+    text-align: center;
+    width: 298px;
+}
+
 
 /*---------- min-width 480 px ----------*/
 
@@ -1080,7 +1089,7 @@ img.wp-post-image, .video-thumbnail {
 }
 
 
-/*---------- min-width 1300 px ----------*/
+/*---------- min-width 1300 px ----------
 
 @media screen and (min-width: 1300px) {
 
@@ -1098,6 +1107,7 @@ img.wp-post-image, .video-thumbnail {
     }
 
 }
+*/
 
 
 
