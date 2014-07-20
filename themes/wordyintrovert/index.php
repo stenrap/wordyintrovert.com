@@ -139,12 +139,15 @@ POST;
             </div>
             <div id="amazon-macbook-affiliate">
                 <a href="http://www.amazon.com/s/?_encoding=UTF8&camp=1789&creative=390957&field-keywords=macbook%20pro&linkCode=ur2&rh=n%3A541966%2Ck%3Amacbook%20pro&tag=wordyintrover-20&url=search-alias%3Dcomputers&linkId=MGIUOPQV3X5ZKV5S" target="_blank">
-                    <span id="create-on">I blog with joy on a Mac:</span>
+                    <span id="create-on">I blog with joy on a Mac!</span>
                     <img src="<?php bloginfo('stylesheet_directory'); ?>/images/macbook-pro@2x.jpg" />
                 </a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=wordyintrover-20&l=ur2&o=1" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
             </div>
-            <div id="subscribe">
-
+            <div id="subscribe-box">
+                <span id="subscribe-span">SUBSCRIBE</span>
+                <p>Would you like to be notified when this introvert has been wordy? You might consider subscribing to the loquacious newsletter:</p>
+                <input type="text" id="newsletter-email-input" placeholder="Email address" />
+<!--                <input type="button" id="newsletter-submit" value="subscribe" />-->
             </div>
         </div>
     </div> <!-- #post-content -->
