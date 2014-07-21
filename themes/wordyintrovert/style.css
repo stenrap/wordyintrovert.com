@@ -888,6 +888,7 @@ img.wp-post-image, .video-thumbnail {
     display: inline-block;
     height: 248px;
     margin-top: 20px;
+    position: relative;
     text-align: center;
     width: 298px;
 }
@@ -909,11 +910,12 @@ img.wp-post-image, .video-thumbnail {
 #newsletter-email-input {
     border: 1px solid #d9d9d9;
     border-radius: 4px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     height: 34px;
-    margin: auto;
     outline: none;
     padding: 2px 8px;
+    position: absolute;
+    bottom: 27px; right: 30px;
     width: 220px;
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075),
                 0 0 5px rgba(0,0,0,0);
@@ -924,6 +926,18 @@ img.wp-post-image, .video-thumbnail {
     border-color: #9ecaed;
     box-shadow: inset 0 1px 1px rgba(0,0,0,0),
                 0 0 5px #9ecaed;
+}
+
+#newsletter-submit {
+    background-image: url(images/newsletter-submit-back.png);
+    background-size: 36px 36px;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 36px;
+    position: absolute;
+    bottom: 29px; right: 32px;
+    width: 36px;
+    z-index: 1;
 }
 
 
