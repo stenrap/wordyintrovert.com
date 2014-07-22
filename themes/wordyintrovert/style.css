@@ -575,6 +575,7 @@ nav {
 }
 
 #bars {
+    display: inline-block;
 	float: right;
 	margin-left: 6px;
 	padding-top: 3.1rem;
