@@ -7,15 +7,13 @@ $(function() {
     /* ===== Mobile Nav ===== */
     WI.MobileMenuButton = Backbone.View.extend({
 
-        /* WYLO: This is a freaking mess. Come up with something that doesn't suck. */
-
         toggleMenu: function() {
-            if ($("#menu-items").hasClass("visible")) {
+            if ($("#menu-button").css("display") === "none") {
+                $("#menu-items").removeClass("displayNone");
+            } else {
                 if ($("#menu-items").hasClass("displayNone")) {
                     $("#menu-items").removeClass("displayNone");
-                }
-            } else {
-                if (!$("#menu-items").hasClass("displayNone")) {
+                } else {
                     $("#menu-items").addClass("displayNone");
                 }
             }
@@ -24,33 +22,26 @@ $(function() {
         onResizeWindow: function(event) {
             if ($("#menu-button").css("display") === "none") {
                 $("#menu-items").removeClass("displayNone");
+            } else {
+                $("#menu-items").addClass("displayNone");
             }
         },
 
         initialize: function() {
-            $("#menu-items").addClass("displayNone");
             if ($("#menu-button").css("display") === "none") {
-                $("#menu-items").addClass("visible");
-                this.toggleMenu();
+                $("#menu-items").removeClass("displayNone");
             }
             $(window).resize(this.onResizeWindow);
         },
 
-        onMenuClick: function() {
-            if ($("#menu-items").hasClass("visible")) {
-                $("#menu-items").removeClass("visible");
-            } else {
-                $("#menu-items").addClass("visible");
-            }
-            this.toggleMenu();
-        },
-
         events: {
-            "click #menu-button": "onMenuClick"
+            "click": "toggleMenu"
         }
 
     });
 
-    new WI.MobileMenuButton();
+    new WI.MobileMenuButton({
+        el: "#menu-button"
+    });
 
 });

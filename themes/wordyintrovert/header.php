@@ -41,7 +41,7 @@
                 </div>
             </div>
             <!-- -->
-            <div id="menu-items">
+            <div id="menu-items" class="displayNone">
                 <ul>
                     <li><a href="/" class="selected">HOME</a></li>
                     <li><a href="/about">ABOUT</a></li>
