@@ -33,7 +33,7 @@
         </div>
         <nav>
             <div id="menu-button">
-                <span>MENU</span>
+<!--                <span>MENU</span>-->
                 <div id="bars">
                     <div id="bar1" class="menu-bar"></div>
                     <div id="bar2" class="menu-bar"></div>
