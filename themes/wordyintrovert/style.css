@@ -598,12 +598,13 @@ nav {
 	z-index: 9999;
 }
 
+
+
 nav ul {
 	font-size: 2.0rem;
 	list-style: none;
 	margin: 0;
 	padding-left: 2rem;
-	/*padding-right: 1rem;*/
 	text-align: right;
 }
 
@@ -623,7 +624,6 @@ nav ul li:last-child {
 }
 
 nav a {
-	/*background-color: #990000;*/
 	background: #1f1f1f;
 	color: #eee;
 	display: block;
@@ -670,7 +670,6 @@ nav a {
 	}
 
 	nav li {
-		/*background: #dfdfdf;*/
 		display: inline;
 		float: left;
 	}

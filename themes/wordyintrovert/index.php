@@ -151,7 +151,10 @@ POST;
             </div>
         </div>
     </div> <!-- #post-content -->
-
+    <script src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery-min.js"></script>
+    <script src="<?php bloginfo('stylesheet_directory'); ?>/js/underscore-min.js"></script>
+    <script src="<?php bloginfo('stylesheet_directory'); ?>/js/backbone-min.js"></script>
+    <script src="<?php bloginfo('stylesheet_directory'); ?>/js/wordyintrovert.js"></script>
 
 <?php
 
