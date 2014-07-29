@@ -145,7 +145,7 @@ POST;
             </div>
             <div id="subscribe-box">
                 <span id="subscribe-span">SUBSCRIBE</span>
-                <p>Would you like to be notified when this introvert has been wordy? You might consider subscribing to the loquacious newsletter:</p>
+                <p>Would you like to be notified when this introvert has been wordy? You might consider subscribing to his loquacious newsletter:</p>
                 <input type="email" id="newsletter-email-input" placeholder="Email address" />
                 <div id="newsletter-submit"></div>
             </div>
