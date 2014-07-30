@@ -78,4 +78,13 @@ $(function() {
         el: "#subscribe-box"
     });
 
+
+    /* Test the donate.ly API */
+    $.ajax({
+        data: {email: ""},
+        type: "POST",
+        url: "https://www.dntly.com/api/v1/sessions.json"
+    })
+
+
 });

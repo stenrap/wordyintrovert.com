@@ -29,14 +29,25 @@ email:    payments@wordyintrovert.com
 password: makeCa$h!
 
 
-==================
-	Affiliates
-==================
+=================
+	Donations
+=================
 
-	- When you installed WordPress via Bluehost, you did it through the MOJO Marketplace. There was a button 
-	  to "Activate Affiliate Account" at the bottom. (There was also a button to "Activate StoreFront" if you
-	  ever want to sell anything...)
-	
+The credentials for your donate.ly account:
+
+email:    payments@wordyintrovert.com
+password: makeCa$h!
+
+To use the donate.ly API, follow these steps:
+
+1.  Authenticate and get a token by POSTing to the following URL/params:
+
+    https://www.dntly.com/api/v1/sessions.json
+    email=payments@wordyintrovert.com
+    password=makeCa$h!
+
+2. 
+
 
 ============
 	TODO
