@@ -149,6 +149,9 @@ POST;
                 <input type="email" id="newsletter-email-input" placeholder="Email address" />
                 <div id="newsletter-submit"></div>
             </div>
+            <div id="donate-box">
+                <p>Would you like to be notified when this introvert has been wordy? You might consider subscribing to his loquacious newsletter:</p>
+            </div>
 
             <!-- WYLO: Add the "donate" box... -->
 

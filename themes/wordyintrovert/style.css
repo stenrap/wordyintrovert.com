@@ -903,14 +903,14 @@ img.wp-post-image, .video-thumbnail {
     width: 298px;
 }
 
-#subscribe-span {
+#subscribe-span, #donate-span {
     display: block;
     font-size: 1.8rem;
     letter-spacing: 4px;
     margin-top: 34px;
 }
 
-#subscribe-box p {
+#subscribe-box p, #donate-box p {
     font-size: 1.5rem;
     line-height: 2.0rem;
     margin: 22px 26px 20px 35px;
@@ -948,6 +948,16 @@ img.wp-post-image, .video-thumbnail {
     bottom: 29px; right: 32px;
     width: 36px;
     z-index: 1;
+}
+
+#donate-box {
+    border: 1px solid #d9d9d9;
+    display: inline-block;
+    height: 248px;
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+    width: 298px;
 }
 
 
