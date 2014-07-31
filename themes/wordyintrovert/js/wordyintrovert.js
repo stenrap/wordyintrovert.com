@@ -78,13 +78,15 @@ $(function() {
         el: "#subscribe-box"
     });
 
+    /* The donate.ly Dialog */
+    $("#donate-dialog").dialog({
+        autoOpen:      false,
+        closeOnEscape: false,
+        draggable:     false,
+        modal:         true,
+        resizable:     false
+    });
 
-    /* Test the donate.ly API */
-    $.ajax({
-        data: {email: ""},
-        type: "POST",
-        url: "https://www.dntly.com/api/v1/sessions.json"
-    })
 
 
 });

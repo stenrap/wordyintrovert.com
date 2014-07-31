@@ -17,6 +17,7 @@
     <title><?php if (is_home() || is_front_page()) echo get_bloginfo('name'); else wp_title( '|', true, 'right' ); ?></title>
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/js/jquery-ui/jquery-ui.min.css" type="text/css" />
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/iconset.css" type="text/css" />
     <?php wp_head(); ?>
 </head>

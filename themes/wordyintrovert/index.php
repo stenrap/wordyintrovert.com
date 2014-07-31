@@ -149,13 +149,20 @@ POST;
                 <input type="email" id="newsletter-email-input" placeholder="Email address" />
                 <div id="newsletter-submit"></div>
             </div>
+
+            <!-- WYLO: Add the "donate" box... -->
+
         </div>
     </div> <!-- #post-content -->
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery-min.js"></script>
+    <script src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery-ui/jquery-ui.min.js"></script>
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/underscore-min.js"></script>
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/backbone-min.js"></script>
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/wordyintrovert.js"></script>
-    <!-- <script src='https://www.dntly.com/assets/js/v1/form.js' data-donately-id="1950" ></script> Stick this inside a "dialog" that's 300px wide. -->
+    <div id="donate-dialog">
+        <script src='https://www.dntly.com/assets/js/v1/form.js' data-donately-id="1950" ></script>
+        <input type="text" size="1" class="displayNone" autofocus />
+    </div>
 
 <?php
 

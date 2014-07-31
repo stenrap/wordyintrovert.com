@@ -485,6 +485,19 @@ a {
 	display: none;
 }
 
+#donate-dialog {
+    width: 320px;
+}
+
+div.ui-widget-overlay {
+    background-image: none !important; /* Fix horizontal gap issue */
+    background-color: #000;
+}
+
+.ui-dialog > .ui-widget-header {
+    background: #333;
+}
+
 /*---------- min-width 768 px ----------*/
 
 @media screen and (min-width: 768px) {
@@ -595,7 +608,7 @@ nav {
 	position: absolute;
 	right: 20px;
 	top: 62px;
-	z-index: 9999;
+	z-index: 2;
 }
 
 nav ul {
