@@ -84,9 +84,12 @@ $(function() {
         closeOnEscape: false,
         draggable:     false,
         modal:         true,
-        resizable:     false
+        resizable:     false,
+        title:         "Thank You!"
     });
 
-
+    $("#donate-button").click(function() {
+        $("#donate-dialog").dialog("open");
+    });
 
 });

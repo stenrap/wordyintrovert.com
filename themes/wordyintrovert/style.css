@@ -496,6 +496,8 @@ div.ui-widget-overlay {
 
 .ui-dialog > .ui-widget-header {
     background: #333;
+    color: #fff;
+    font-size: 1.8rem;
 }
 
 /*---------- min-width 768 px ----------*/
@@ -573,7 +575,7 @@ nav {
 
 #menu-button {
 /* 	background-color: #444444; */
-    border: 1px solid #d9d9d9;
+    /*border: 1px solid #d9d9d9;*/
 	color: #555;
 	cursor: pointer;
     display: inline-block;
@@ -958,6 +960,37 @@ img.wp-post-image, .video-thumbnail {
     position: relative;
     text-align: center;
     width: 298px;
+}
+
+#donate-box p {
+    margin-bottom: 12px;
+}
+
+#donate-button {
+    background-color: #007ccc;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.6rem;
+    height: 30px;
+    letter-spacing: 2px;
+    margin: auto;
+    max-width: 238px;
+    padding-top: 6px;
+    text-align: center;
+
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),
+                      0 0 5px rgba(0,0,0,0);
+    transition: background-color ease-in-out .15s, border-color ease-in-out .15s, box-shadow ease-in-out .15s, color ease-in-out .15s;
+}
+
+#donate-button:hover {
+    background-color: #fff;
+    border-color: #9ecaed;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0),
+                      0 0 5px #9ecaed;
+    color: #007ccc;
 }
 
 

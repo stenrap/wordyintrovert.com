@@ -145,12 +145,17 @@ POST;
             </div>
             <div id="subscribe-box">
                 <span id="subscribe-span">SUBSCRIBE</span>
-                <p>Would you like to be notified when this introvert has been wordy? You might consider subscribing to his loquacious newsletter:</p>
+                <p>Would you like to be notified when this introvert has been wordy? You might consider subscribing to my loquacious newsletter:</p>
                 <input type="email" id="newsletter-email-input" placeholder="Email address" />
                 <div id="newsletter-submit"></div>
             </div>
             <div id="donate-box">
-                <p>Would you like to be notified when this introvert has been wordy? You might consider subscribing to his loquacious newsletter:</p>
+                <p>
+                    I absolutely love to write, and I work tirelessly to produce what I hope is engaging and thought-provoking content for this blog.
+                    <br/><br/>
+                    If you have been enriched by my efforts, please support my quest to make the Internet a better place.
+                </p>
+                <div id="donate-button">DONATE NOW <i class="icon-check_circle"></i></div>
             </div>
 
             <!-- WYLO: Add the "donate" box... -->
