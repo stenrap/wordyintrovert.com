@@ -750,12 +750,12 @@ img.wp-post-image, .video-thumbnail {
     /*display: inline-block;*/
     /*float: left;*/
     height: 185px;
-    margin: auto;
+    margin: 0 auto 20px auto;
     width: 300px;
 }
 
 .post-metadata {
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .post-date-box {
@@ -787,6 +787,7 @@ img.wp-post-image, .video-thumbnail {
 }
 
 .post-title {
+    color: #007ccc;
     font-size: 2.5rem;
 }
 
@@ -1100,10 +1101,12 @@ img.wp-post-image, .video-thumbnail {
         /*width: 270px;*/
     }
 
+    .post-thumbnail {
+        margin: 0 auto 16px auto;
+    }
+
     .post-metadata {
-        /*display: inline-block;*/
-        margin-top: 16px;
-        /*margin-top: 0;*/
+        margin-bottom: 16px;
     }
 
     .post-date-box {

@@ -37,13 +37,15 @@ get_header(); ?>
                 $post_thumbnail = '<iframe class="video-thumbnail" width="270" height="212" src="'.$video_thumbnail_url.'" frameborder="0"></iframe>';
             }
         } else {
-            $post_thumbnail = '<a href="'.$post_permalink.'" title="'.get_the_title().'">'.$post_thumbnail.'</a>';
+            if (!is_single()) {
+                $post_thumbnail = '<a href="'.$post_permalink.'" title="'.get_the_title().'">'.$post_thumbnail.'</a>';
+            }
         }
 
         $post_month   = get_the_date('M');
         $post_date    = get_the_date('j');
         $post_year    = get_the_date('Y');
-        $post_title   = get_the_title();
+        $post_title   = is_single() ? get_the_title() : "<a href='$post_permalink'>".get_the_title()."</a>";
         $post_author  = get_the_author();
         $num_comments = get_comments_number() == 1 ? get_comments_number() . " Comment" : get_comments_number() . " Comments";
         $comments_url = get_comments_link();
@@ -64,7 +66,9 @@ get_header(); ?>
             $tag_names = '<span class="post-tags"><i class="icon-hashtag"></i> '.$tag_names.'</span>';
         }
 
-        $post_content = get_the_excerpt().' ...<span class="post-read-more"><a href="'.get_permalink().'">Continue reading &nbsp;<i class="icon-arrow_big_right"></i></a></span>';
+        $snippet = get_the_excerpt().' ...<span class="post-read-more"><a href="'.get_permalink().'">Continue reading &nbsp;<i class="icon-arrow_big_right"></i></a></span>';
+
+        $post_content = is_single() ? get_the_content() : $snippet;
 
 echo <<<POST
             <div class="post-snippet">
@@ -82,7 +86,7 @@ echo <<<POST
                     </div>
                     <div class="post-info">
                         <div class="post-title">
-                            <a href="$post_permalink">$post_title</a>
+                            $post_title<!--<a href="$post_permalink">$post_title</a>-->
                         </div>
                         <div class="post-stats">
                             <i class="icon-user"></i> $post_author &nbsp;&nbsp;&nbsp;
@@ -158,7 +162,7 @@ POST;
                 <div id="donate-button">DONATE NOW <i class="icon-check_circle"></i></div>
             </div>
 
-            <!-- WYLO: Add the "donate" box... -->
+            <!-- TODO: Add the Google AdSense box... -->
 
         </div>
     </div> <!-- #post-content -->
