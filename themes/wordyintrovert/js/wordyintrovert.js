@@ -92,4 +92,9 @@ $(function() {
         $("#donate-dialog").dialog("open");
     });
 
+    $("#donate-link").click(function(event) {
+        event.preventDefault();
+        $("#donate-dialog").dialog("open");
+    });
+
 });

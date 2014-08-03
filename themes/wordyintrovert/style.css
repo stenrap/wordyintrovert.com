@@ -22,7 +22,8 @@ Table of Contents
 1.0 - Normalize
 2.0 - Structure
 3.0 - Header
-4.0 - Home Content
+4.0 - Home and Single Post Content
+5.0 - Comments
 
 ------------------------------------------------------------------------------*/
 
@@ -717,7 +718,7 @@ nav a {
 
 
 /*------------------------------------------------------------------------------
-	4.0 - Home Content
+	4.0 - Home and Single Post Content
 ------------------------------------------------------------------------------*/
 
 #intro-strip {
@@ -1193,25 +1194,104 @@ img.wp-post-image, .video-thumbnail {
 }
 
 
-/*---------- min-width 1300 px ----------
+/*------------------------------------------------------------------------------
+	5.0 - Comments
+------------------------------------------------------------------------------*/
 
-@media screen and (min-width: 1300px) {
+#reply-title {
+    font-size: 2.4rem;
+    margin: 30px 0 10px 0;
+}
 
-    #post-content {
-        width: 1260px;
-    }
+#reply-title a {
+    color: #007ccc;
+}
 
-    #post-sidebar {
-        width: 620px;
-    }
+#reply-title a:hover {
+    color: #009bff;
+}
 
-    #amazon-macbook-affiliate {
-        margin-left: 20px;
-        margin-top: 0;
+#cancel-comment-reply-link {
+    display: block;
+}
+
+#author,
+#email,
+#comment {
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    display: block;
+    font-size: 1.6rem;
+    height: 34px;
+    margin-bottom: 10px;
+    outline: none;
+    padding: 2px 8px;
+    width: 282px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),
+                      0 0   5px rgba(0,0,0,0);
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+#author:focus,
+#email:focus,
+#comment:focus {
+    border-color: #9ecaed;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0),
+                      0 0   5px #9ecaed;
+}
+
+#submit-comment {
+    background-color: #007ccc;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.6rem;
+    height: 40px;
+    letter-spacing: 1px;
+    margin: auto;
+    padding-left: 14px;
+    padding-right: 14px;
+    text-align: center;
+
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),
+    0 0 5px rgba(0,0,0,0);
+    transition: background-color ease-in-out .15s, border-color ease-in-out .15s, box-shadow ease-in-out .15s, color ease-in-out .15s;
+}
+
+#comment {
+    height: 170px;
+}
+
+#submit-comment:hover {
+    background-color: #fff;
+    border-color: #9ecaed;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0),
+    0 0 5px #9ecaed;
+    color: #007ccc;
+}
+
+
+/*---------- min-width 480 px ----------*/
+
+@media screen and (min-width: 480px) {
+
+    #comment {
+        width: 400px;
     }
 
 }
-*/
+
+
+/*---------- min-width 768 px ----------*/
+
+@media screen and (min-width: 980px) {
+
+    #comment {
+        width: 550px;
+    }
+
+}
 
 
 

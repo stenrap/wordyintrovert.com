@@ -34,7 +34,6 @@
         </div>
         <nav>
             <div id="menu-button">
-<!--                <span>MENU</span>-->
                 <div id="bars">
                     <div id="bar1" class="menu-bar"></div>
                     <div id="bar2" class="menu-bar"></div>
@@ -47,7 +46,7 @@
                     <li><a href="/" class="selected">HOME</a></li>
                     <li><a href="/about">ABOUT</a></li>
                     <li><a href="/resources">RESOURCES</a></li>
-                    <li><a href="/donate">DONATE</a></li>
+                    <li><a href="/donate" id="donate-link">DONATE</a></li>
                 </ul>
             </div>
         </nav>

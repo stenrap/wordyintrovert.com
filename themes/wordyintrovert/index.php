@@ -102,6 +102,10 @@ echo <<<POST
 POST;
 
         $post_count++;
+
+        if (is_single()) {
+            comments_template();
+        }
     }
 ?>
 
