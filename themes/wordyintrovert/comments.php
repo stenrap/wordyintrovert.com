@@ -15,7 +15,7 @@
 	<?php
         if (have_comments()) {
             foreach (get_comments() as $comment) {
-                echo "Avatar:".get_avatar($comment, 32)."<br/>";
+                echo get_avatar($comment, 128)."<br/>";
                 echo "Author:".$comment->comment_author."<br/>";
                 echo "Time:".$comment->comment_date."<br/>";
                 echo "Comment:".$comment->comment_content."<br/>";

@@ -44,7 +44,7 @@
             <div id="menu-items" class="displayNone">
                 <ul>
                     <li><a href="/" class="selected">HOME</a></li>
-                    <li><a href="/about">ABOUT</a></li>
+                    <li><a href="/in-the-beginning">ABOUT</a></li>
                     <li><a href="/resources">RESOURCES</a></li>
                     <li><a href="/donate" id="donate-link">DONATE</a></li>
                 </ul>
