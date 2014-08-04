@@ -954,6 +954,10 @@ img.wp-post-image, .video-thumbnail {
     z-index: 1;
 }
 
+#subscribed-dialog {
+    font-size: 1.6rem;
+}
+
 #donate-box {
     border: 1px solid #d9d9d9;
     display: inline-block;

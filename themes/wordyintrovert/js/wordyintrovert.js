@@ -58,7 +58,7 @@ $(function() {
                 type: "POST",
                 url: "/wp-content/themes/wordyintrovert/subscribe.php"
             });
-            alert("Thank you for subscribing."); // TODO: Make this not an alert? (Although pink peonies uses an alert here...)
+            $("#subscribed-dialog").dialog("open");
         },
 
         submitEnter: function(event) {
@@ -78,7 +78,18 @@ $(function() {
         el: "#subscribe-box"
     });
 
-    /* The donate.ly Dialog */
+    $("#subscribed-dialog").dialog({
+        autoOpen:      false,
+        closeOnEscape: false,
+        draggable:     false,
+        modal:         true,
+        resizable:     false,
+        title:         "Subscribed!"
+    });
+
+
+    /* ----- The donate.ly Dialog ----- */
+
     $("#donate-dialog").dialog({
         autoOpen:      false,
         closeOnEscape: false,
