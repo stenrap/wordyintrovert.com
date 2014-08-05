@@ -1237,7 +1237,7 @@ img.wp-post-image, .video-thumbnail {
 }
 
 .child-comment {
-    margin-left: 54px;
+    margin-left: 32px;
 }
 
 .comment-avatar {
@@ -1269,8 +1269,40 @@ img.wp-post-image, .video-thumbnail {
     clear: left;
     font-size: 1.5rem;
     line-height: 22px;
-    margin-left: 83px;
-    margin-top: 22px;
+    /*margin-bottom: 20px;*/
+    /*margin-left: 83px;*/
+    margin-top: 30px;
+}
+
+.reply-link-container {
+    margin-top: 30px;
+}
+
+.reply-link {
+    background-color: #007ccc;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.6rem;
+    height: 40px;
+    letter-spacing: 1px;
+    margin: 20px auto 20px 0;
+    max-width: 60px;
+    padding: 8px;
+    text-align: center;
+
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),
+    0 0 5px rgba(0,0,0,0);
+    transition: background-color ease-in-out .15s, border-color ease-in-out .15s, box-shadow ease-in-out .15s, color ease-in-out .15s;
+}
+
+.reply-link:hover {
+    background-color: #fff;
+    border-color: #9ecaed;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0),
+    0 0 5px #9ecaed;
+    color: #007ccc;
 }
 
 #author,

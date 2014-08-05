@@ -17,23 +17,29 @@
             $first = true;
             foreach (get_comments(array("order" => "ASC")) as $comment) {
                 $emailHash = md5(strtolower(trim($comment->comment_author_email)));
-                $comment_class = strcmp("1", $comment->comment_parent) == 0 ? "child-comment" : "parent-comment";
+                $comment_class = strcmp("0", $comment->comment_parent) == 0 ? "parent-comment" : "child-comment";
                 $comment_date = date("M j, Y \\a\\t g:i a", strtotime($comment->comment_date));
                 $container_class = $first ? "first-comment-container" : "comment-container";
+                $reply_link = "";
+                if (strcmp("0", $comment->comment_parent) == 0) {
+                    $reply_link = '<div class="reply-link-container"><a class="reply-link" href="http://www.wordyintrovert.com/hello-world/?replytocom='.$comment->comment_ID.'#respond">Reply</a></div>';
+                }
 
 echo <<<COMMENT
     <div class="$container_class">
         <div class="$comment_class">
-            <img class="comment-avatar" src="http://www.gravatar.com/avatar/$emailHash?s=128&d=mm" />
+            <img class="comment-avatar" src="http://www.gravatar.com/avatar/$emailHash?s=128&d=mm&r=g" />
             <span class="comment-author">$comment->comment_author</span><br/>
             <span class="comment-date">$comment_date</span>
             <div class="comment-text">
                 $comment->comment_content
             </div>
+            $reply_link
         </div>
     </div>
 COMMENT;
                 // WYLO ... This is what the reply link looks like: http://www.wordyintrovert.com/hello-world/?replytocom=1#respond
+//                echo "depth: ".$comment->comment_parent;
                 $first = false;
             }
         }
