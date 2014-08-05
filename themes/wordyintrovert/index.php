@@ -67,11 +67,11 @@ get_header(); ?>
         }
 
         $snippet = get_the_excerpt().' ...<span class="post-read-more"><a href="'.get_permalink().'">Continue reading &nbsp;<i class="icon-arrow_big_right"></i></a></span>';
-
         $post_content = is_single() ? get_the_content() : $snippet;
+        $post_snippet_margin_class = is_single() ? "post-snippet-single" : "post-snippet-home";
 
 echo <<<POST
-            <div class="post-snippet">
+            <div class="post-snippet $post_snippet_margin_class">
                 <div class="post-thumbnail">
                     $post_thumbnail
                 </div>

@@ -735,9 +735,12 @@ nav a {
     margin: 20px 0;
 }
 
-.post-snippet {
-    /*height: 212px;*/
+.post-snippet-home {
     margin-bottom: 100px;
+}
+
+.post-snippet-single {
+    margin-bottom: 50px;
 }
 
 img.wp-post-image, .video-thumbnail {
@@ -1219,6 +1222,55 @@ img.wp-post-image, .video-thumbnail {
     display: block;
 }
 
+.comment-container, .first-comment-container {
+    border-bottom: 1px #ddd dotted;
+}
+
+.first-comment-container {
+    border-top: 1px #ddd dotted;
+}
+
+.parent-comment, .child-comment {
+    margin-bottom: 20px;
+    margin-top: 18px;
+    padding-bottom: 15px;
+}
+
+.child-comment {
+    margin-left: 54px;
+}
+
+.comment-avatar {
+    border-radius: 4px;
+    float: left;
+    height: 64px;
+    width: 64px;
+}
+
+.comment-author {
+    margin-top: 8px;
+    margin-bottom: 6px;
+}
+
+.comment-author, .comment-date {
+    display: inline-block;
+    font-size: 1.8rem;
+    margin-left: 18px;
+}
+
+.comment-date {
+    color: #aaa;
+    font-size: 1.2rem;
+}
+
+.comment-text {
+    clear: left;
+    font-size: 1.6rem;
+    line-height: 22px;
+    margin-left: 83px;
+    margin-top: 22px;
+}
+
 #author,
 #email,
 #comment {
@@ -1253,7 +1305,7 @@ img.wp-post-image, .video-thumbnail {
     font-size: 1.6rem;
     height: 40px;
     letter-spacing: 1px;
-    margin: auto;
+    margin: 0 auto 20px auto;
     padding-left: 14px;
     padding-right: 14px;
     text-align: center;
