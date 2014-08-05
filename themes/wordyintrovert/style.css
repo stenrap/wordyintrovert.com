@@ -740,7 +740,7 @@ nav a {
 }
 
 .post-snippet-single {
-    margin-bottom: 50px;
+    margin-bottom: 75px;
 }
 
 img.wp-post-image, .video-thumbnail {
@@ -1248,13 +1248,15 @@ img.wp-post-image, .video-thumbnail {
 }
 
 .comment-author {
-    margin-top: 8px;
+    color: #999;
+    font-weight: bold;
+    margin-top: 12px;
     margin-bottom: 6px;
 }
 
 .comment-author, .comment-date {
     display: inline-block;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-left: 18px;
 }
 
@@ -1265,7 +1267,7 @@ img.wp-post-image, .video-thumbnail {
 
 .comment-text {
     clear: left;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     line-height: 22px;
     margin-left: 83px;
     margin-top: 22px;
