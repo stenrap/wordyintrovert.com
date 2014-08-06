@@ -1,6 +1,14 @@
 <?php
 
 if (isset($_POST['email'])) {
+    $posted_email = $_POST['email'];
+    $at_symbol = "@";
+    $pos = strpos($posted_email, $at_symbol);
+
+    if ($pos === false) {
+        return;
+    }
+
     $from    = "From: Wordy Introvert <mrwordy@wordyintrovert.com>";
     $to      = "rob.johansen@gmail.com";
     $subject = "New Subscriber";
@@ -16,6 +24,4 @@ if (isset($_POST['email'])) {
     $body   .= "You";
 
     mail($to, $subject, $body, $from);
-} else {
-    echo "Hey...";
 }

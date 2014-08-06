@@ -52,6 +52,9 @@ $(function() {
 
         doSubmit: function() {
             var emailAddress = $("#newsletter-email-input").val();
+            if (emailAddress.indexOf("@") == -1) {
+                return;
+            }
             $("#newsletter-email-input").val("");
             $.ajax({
                 data: {email: emailAddress},
@@ -80,6 +83,7 @@ $(function() {
 
     $("#subscribed-dialog").dialog({
         autoOpen:      false,
+        buttons:       [ { text:"OK", click:function() { $(this).dialog("close"); } } ],
         closeOnEscape: false,
         draggable:     false,
         modal:         true,
