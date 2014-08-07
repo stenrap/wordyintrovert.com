@@ -501,6 +501,22 @@ div.ui-widget-overlay {
     font-size: 1.8rem;
 }
 
+footer {
+    background-color: #2d2d2d;
+    color: #fff;
+    font-size: 1.8rem;
+    height: 80px;
+    text-align: center;
+}
+
+footer p {
+    padding-top: 30px;
+}
+
+footer a {
+    color: #ccc;
+}
+
 /*---------- min-width 768 px ----------*/
 
 @media screen and (min-width: 768px) {

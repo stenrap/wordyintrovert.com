@@ -40,12 +40,11 @@
                     <div id="bar3" class="menu-bar"></div>
                 </div>
             </div>
-            <!-- -->
+
             <div id="menu-items" class="displayNone">
                 <ul>
-                    <li><a href="/" class="selected">HOME</a></li>
-                    <li><a href="/in-the-beginning">ABOUT</a></li>
-                    <li><a href="/resources">RESOURCES</a></li>
+                    <li><a href="/" <?php if (strpos($_SERVER['REQUEST_URI'], '/in-the-beginning') === false) echo 'class="selected"'; ?> >HOME</a></li>
+                    <li><a href="/in-the-beginning" <?php if (strpos($_SERVER['REQUEST_URI'], '/in-the-beginning') !== false) echo 'class="selected"'; ?>>ABOUT</a></li>
                     <li><a href="/donate" id="donate-link">DONATE</a></li>
                 </ul>
             </div>
