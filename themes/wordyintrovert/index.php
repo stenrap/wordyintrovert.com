@@ -151,12 +151,6 @@ POST;
                     <img src="<?php bloginfo('stylesheet_directory'); ?>/images/macbook-pro@2x.jpg" />
                 </a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=wordyintrover-20&l=ur2&o=1" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
             </div>
-            <div id="subscribe-box">
-                <span id="subscribe-span">SUBSCRIBE</span>
-                <p>Would you like to be notified when this introvert has been wordy? You might consider subscribing to the loquacious newsletter:</p>
-                <input type="email" id="newsletter-email-input" placeholder="Email address" />
-                <div id="newsletter-submit"></div>
-            </div>
             <div id="donate-box">
                 <p>
                     I absolutely love to write, and I work tirelessly to produce what I hope is engaging and thought-provoking content for this blog.
@@ -164,6 +158,20 @@ POST;
                     If you have been enriched by my efforts, please support my quest to make the Internet a better place.
                 </p>
                 <div id="donate-button">DONATE NOW <i class="icon-check_circle"></i></div>
+            </div>
+            <div id="subscribe-box">
+                <span id="subscribe-span">SUBSCRIBE</span>
+                <p>Would you like to be notified when this introvert has been wordy? You might consider subscribing to the loquacious newsletter:</p>
+                <input type="email" id="newsletter-email-input" placeholder="Email address" />
+                <div id="newsletter-submit"></div>
+            </div>
+            <div id="social-box">
+                <div id="facebook-box">
+                    <a href="https://www.facebook.com/WordyIntrovert" target="_blank">Like The<br/>Wordy Introvert</a>
+                </div>
+                <div id="twitter-box">
+                    <a href="https://twitter.com/wordyintrovert" target="_blank">Follow The<br/>Wordy Introvert</a>
+                </div>
             </div>
 
             <!-- TODO: Add the Google AdSense box... -->

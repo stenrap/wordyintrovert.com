@@ -1018,6 +1018,44 @@ img.wp-post-image, .video-thumbnail {
     color: #007ccc;
 }
 
+#social-box {
+    display: inline-block;
+    height: 250px;
+    margin-top: 20px;
+    position: relative;
+    width: 300px;
+}
+
+#social-box a {
+    color: #fff;
+    display: block;
+    font-size: 2.2rem;
+    height: 90px;
+    padding: 26px 0 0 70px;
+    text-align: center;
+    width: 230px;
+}
+
+#facebook-box, #twitter-box {
+    background-position: 22px 22px;
+    background-repeat: no-repeat;
+    background-size: 72px 72px;
+    border-radius: 4px;
+    height: 116px;
+}
+
+#facebook-box {
+    background-color: #3b579d;
+    background-image: url(images/facebook-box-back.png);
+
+}
+
+#twitter-box {
+    background-color: #55acee;
+    background-image: url(images/twitter-box-back.png);
+    margin-top: 20px;
+}
+
 
 /*---------- min-width 480 px ----------*/
 
