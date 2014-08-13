@@ -112,4 +112,27 @@ $(function() {
         $("#donate-dialog").dialog("open");
     });
 
+
+    /* ----- Facebook Share Button ----- */
+
+    WI.FacebookShare = Backbone.View.extend({
+
+        openShareDialog: function() {
+            var urlToShare = this.$el.data("url");
+            FB.ui({
+                method: 'share',
+                href: urlToShare
+            }, function (response){});
+        },
+
+        events: {
+            "click": "openShareDialog"
+        }
+
+    });
+
+    new WI.FacebookShare({
+        el: "#facebook-share"
+    });
+
 });

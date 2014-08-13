@@ -104,6 +104,7 @@ POST;
         $post_count++;
 
         if (is_single()) {
+            echo '<div id="facebook-share" data-url="'.$post_permalink.'"><span>Share on<br/>Facebook</span></div>';
             comments_template();
         }
     }
