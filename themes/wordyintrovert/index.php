@@ -28,15 +28,14 @@ get_header(); ?>
     while (have_posts() && $post_count < 10) {
         the_post(); // Get the next post
 
-        $post_thumbnail = get_the_post_thumbnail();
+        $post_thumbnail = "";
         $post_permalink = get_permalink();
+        $video_thumbnail_url = get_post_meta(get_the_ID(), 'video_thumbnail_url', true);
 
-        if (strlen($post_thumbnail) == 0) {
-            $video_thumbnail_url = get_post_meta(get_the_ID(), 'video_thumbnail_url', true);
-            if (strlen($video_thumbnail_url) > 0) {
-                $post_thumbnail = '<iframe class="video-thumbnail" width="270" height="212" src="'.$video_thumbnail_url.'" frameborder="0"></iframe>';
-            }
+        if (strlen($video_thumbnail_url) > 0) {
+            $post_thumbnail = '<iframe class="video-thumbnail" width="270" height="212" src="'.$video_thumbnail_url.'" frameborder="0"></iframe>';
         } else {
+            $post_thumbnail = get_the_post_thumbnail();
             if (!is_single()) {
                 $post_thumbnail = '<a href="'.$post_permalink.'" title="'.get_the_title().'">'.$post_thumbnail.'</a>';
             }
